@@ -1,5 +1,11 @@
-ul.ol,li {list-style: none;}
-* {margin: 0;padding: 0;}
+ul.ol,
+li {
+  list-style: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
 .icon {
   width: 1em;
   height: 1em;
@@ -39,10 +45,13 @@ body {
 .colors > li {
   width: 20px;
   height: 20px;
-  box-shadow: 0 0 3px rgba(0,0,0,0.25);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
   margin: 10px 0;
   border-radius: 50%;
   transition: all 0.3s;
+}
+.colors > li.black {
+  background: black;
 }
 .colors > li.red {
   background: red;
@@ -53,25 +62,27 @@ body {
 .colors > li.blue {
   background: blue;
 }
-.colors > li.active{
-  box-shadow: 0 0 3px rgba(0,0,0,0.95);
+
+.colors > li.active {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.95);
   transform: scale(1.2);
 }
-.sizes{
+.sizes {
   position: fixed;
   right: 20px;
   top: 10px;
 }
-.sizes> li{
+.sizes > li {
   margin: 20px 0;
 }
-.sizes>.thin{
+.sizes > .thin {
   height: 0;
   width: 20px;
   border-top: 3px solid black;
 }
-.sizes>.thick{
+.sizes > .thick {
   height: 0;
   width: 20px;
   border-top: 6px solid black;
 }
+
